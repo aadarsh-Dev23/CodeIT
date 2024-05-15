@@ -1,0 +1,262 @@
+:root
+{
+    --dark: #151617;
+    --light:#f0f0f0;
+    --mid:#76ABAE;
+   
+
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.hero
+{
+    width: 100vw;
+    height: 500px;
+    
+
+}
+
+.first
+{
+    background: var(--light);
+}
+
+
+.second
+{
+    background: var(--dark);
+    color: var(--light);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar img
+{
+    height: 48px;
+    margin-left: 30px;
+   
+    
+}
+
+
+.navbar
+{
+    width: 100vw;
+    height: 86px;
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Saira Condensed", sans-serif;
+
+}
+
+
+.navbar-items
+{
+  display: flex;
+  justify-content: end;
+  margin-right: 80px;
+  flex: 1;
+}
+
+a
+{
+    color:var(--light);
+    font-size: 16px;
+}
+    
+
+
+.navbar-item
+{
+    margin: 35px;
+    
+}  
+
+
+.hero-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+
+}
+
+
+
+ .hero img
+{
+    width: 571px;
+    height: 360px;
+    border-radius: 45px;
+   
+}
+
+.hero 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hero-content > h1
+{
+    font-family: "Saira Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 48px;
+}
+
+.second > img
+{
+    width: 556px;
+    height: 316px;
+}
+
+.hero-bt >button
+{
+    height: 30px;
+    width: 80px;
+    border-radius: 11px;
+    font-family: "Saira Condensed", sans-serif;
+   
+
+}
+
+button:hover
+{
+    transition: 0.5s ease-in-out;
+    scale: 1.25;
+    box-shadow: rgb(255, 255, 255) 1px 2px 2px;
+}
+
+.red
+{
+    color: #CC8888;
+}
+
+
+.first > .hero-content
+{
+    margin-right: 20px;
+    margin-left: 20px ;
+}
+
+.first > .heroimg
+{   
+    margin-left: 100px;
+}
+
+
+.second > .heroimg
+{
+    margin-right: 140px;
+    
+}
+
+.third > .hero-content
+{
+    margin-right: 20px;
+    margin-left: 20px ;
+}
+
+.third > .heroimg
+{
+    margin-left: 200px;
+}
+
+.footer 
+{
+    width: 100vw;
+    height: 80px;
+    background: #000;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Saira Condensed", sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .heroimg
+    {
+      display: none;
+    }
+    .second   .hero-content 
+    {
+       
+        text-align: center;
+    }
+    .second button 
+    {
+       position: relative;
+       left: 145px;
+    }
+
+    .third button  
+    {
+        position: relative;
+        left: 40px;
+        margin-top: 20px;
+    }
+
+    .second{
+        background-image: url(assests/second.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        
+    }
+    
+   .navbar 
+   {
+      flex-direction:column;
+      
+      justify-content: center;
+   }
+
+ 
+   .navbar-items
+   {
+    display: none;
+   }
+
+   .navbar img :hover
+   {
+    .navbar-items
+    {
+     display: block;
+     position: relative;
+     background: #000;
+     top: 150px;
+     right:200px;
+     height: 600px;
+    }
+   }
+   button:hover
+   {
+       transition: 0.5s ease-in-out;
+       scale: 2;
+       box-shadow: rgb(255, 255, 255) 1px 2px 2px;
+   }
+   
+  
+}
